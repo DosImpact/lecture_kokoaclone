@@ -148,8 +148,120 @@ input > .box{} direct child 직계 자식
 
 - 3-9 CSS states
 
+.box{ background-color:red; font-size:40px;}
+.box:hover{} 마우스를 올리면~
+.box:active{} 마으스로 클릭하면
+.box:focuse{} tab을 얹거나 input에 타이핑시
+.box:visited{} 클릭했을시
+
+## [Module #4] Advanced CSS
+
+- 4-2 트렌지션
+box클래스에 마우스를 올리면 1초에 걸처 색깔이 서서히 바뀐다.
+.box{background-color:blue; color:white; transition:background-color .9s ease-in-out; } 배경만 바뀌게 만든다.
+.box{background-color:blue; color:white; transition:all .9s ease-in-out; } 모든 속성이  바뀐다.
+.box:hover{background-color:green;}
+
+- 4-3 트렌스포메이션
+html 문서의 요소들의 모습이 바뀌는것, 회전,이동,skew 등등
+.box{ width: 500px; height: 500px; background: red; transform: rotate(20deg); }
+
+트렌지션이랑 트렌스포메이션이랑 합치면 대단한 효과.
+.box{ width:100px; height:100px; background: red; transition: transform .5s ease-in-out;}
+.box:hover{ transform: rotate(1turn); scale(.5, .5);}
+
+- 4-4 애니메이션
+계속해서 트렌지션 및 트렌스폼 효과를 주고 싶다면 애니메이션을 주면 됨.
+
+.box{width:100px; height:100px; background:red; animation: 1.5s scaleAndRotateSquare ease-in-out; }
+@keyframes scaleAndRotateSquare{
+    from{ transform:none;}
+    to{ transform:rotate(1turn) scale(.5, .5); }
+}
+계속해서 애니메이션을 반복하고 싶다면: keyframe과 무한히 애니메이션을 바꿔!
+.box{width:100px; height:100px; background:red; animation: 1.5s scaleAndRotateSquare infinite ease-in-out; }
+@keyframes scaleAndRotateSquare{
+    0%{ transform:none;}
+    50%{ transform:rotate(1turn) scale(.5, .5); }
+    100%{ transform:none; }
+}
+
+- 4-5 Medai Queries
+@media screen and (min-width:320px) and (max-width:640px){
+    body{ background-color:blue;    }
+}
+
+## Outro
+
+- study
+공부할 PDF 제공!
+- homework
+BEM에 대해서 공부하시요.
+[1]
+
+Block
+Standalone entity that is meaningful on its own.
+
+Examples
+header, container, menu, checkbox, input
+---
+
+Element
+A part of a block that has no standalone meaning and is semantically tied to its block.
+
+Examples
+menu item, list item, checkbox caption, header title
+---
+
+Modifier
+A flag on a block or element. Use them to change appearance or behavior.
+
+Examples
+disabled, highlighted, checked, fixed, size big, color yellow
+
+.button {
+	display: inline-block;
+	border-radius: 3px;
+	padding: 7px 12px;
+	border: 1px solid #D5D5D5;
+	background-image: linear-gradient(#EEE, #DDD);
+	font: 700 13px/18px Helvetica, arial;
+}
+.button--state-success {
+	color: #FFF;
+	background: #569E3D linear-gradient(#79D858, #569E3D) repeat-x;
+	border-color: #4A993E;
+}
+.button--state-danger {
+	color: #900;
+}
+[2]
+BEM: 코드를 쉽게 읽기위한 방법론이다. header__form-email. 와 같은 코들르 본다면 BDEM 방법론이 적용된것.
+BEM : block element modifier
+
+페이지를 크게 header, siderbar,footer article 등올 나누면 이게 네이밍의 어근이 된다.
+여기다가 각 기능을 접두사로 추가하면됨.
+
+1. 규칙 element는 __로 이어쓴다.
+.block__element
+eg)
+.header__logo{}
+.header__tagline{}
+.header__navigation{}
+.header__serachbar{}
+
+2. 규칙 Modifier는 --로 이어쓴다.
+.block__elemnet--sizebig
+
+
 ## X. 참고 사이트
 [분석하고 싶은 웹사이트의 사이즈를 볼때](https://chrome.google.com/webstore/detail/page-ruler/emliamioobfffbgcfdchabfibonehkme?hl=en)
+---
 [분석하고 싶은 웹사이트의 색깔을 추출](https://chrome.google.com/webstore/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp?hl=en)
-
-
+---
+[트렌지션 docs](https://developer.mozilla.org/en-US/docs/Web/CSS/transition)
+[트렌스포메이션 docs](https://developer.mozilla.org/en-US/docs/Web/CSS/transform)
+---
+[BEM 소개](http://getbem.com/introduction/)
+[BEM 키 컨셉](https://en.bem.info/methodology/key-concepts/)
+[BEM 퀵스타트](https://en.bem.info/methodology/quick-start/)
