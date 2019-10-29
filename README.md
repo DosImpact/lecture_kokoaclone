@@ -2,9 +2,9 @@
 
 ## [Module #1] The tools of a Web Developer
 
-개발 환경 vs code + Material Theme + Material Icon + prettier 
+- 개발 환경 vs code + Material Theme + Material Icon + prettier 
 
-깃 = 커밋 + 푸시 + 브랜치 기능
+- 깃 = 커밋 + 푸시 + 브랜치 기능
 깃허브는 깃을 클라우드 상에서 관리할 수 있는 웹서비스 , 깃 데스크탑도 있음
 
 HTML = hyper text markup language
@@ -197,7 +197,7 @@ html 문서의 요소들의 모습이 바뀌는것, 회전,이동,skew 등등
 공부할 PDF 제공!
 - homework
 BEM에 대해서 공부하시요.
-[1]
+
 
 Block
 Standalone entity that is meaningful on its own.
@@ -219,6 +219,7 @@ A flag on a block or element. Use them to change appearance or behavior.
 Examples
 disabled, highlighted, checked, fixed, size big, color yellow
 
+``` css
 .button {
 	display: inline-block;
 	border-radius: 3px;
@@ -235,7 +236,9 @@ disabled, highlighted, checked, fixed, size big, color yellow
 .button--state-danger {
 	color: #900;
 }
-[2]
+```
+---
+### 또다른 방법론 
 BEM: 코드를 쉽게 읽기위한 방법론이다. header__form-email. 와 같은 코들르 본다면 BDEM 방법론이 적용된것.
 BEM : block element modifier
 
@@ -255,6 +258,7 @@ eg)
 
 
 ## X. 참고 사이트
+
 [분석하고 싶은 웹사이트의 사이즈를 볼때](https://chrome.google.com/webstore/detail/page-ruler/emliamioobfffbgcfdchabfibonehkme?hl=en)
 ---
 [분석하고 싶은 웹사이트의 색깔을 추출](https://chrome.google.com/webstore/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp?hl=en)
