@@ -185,56 +185,6 @@ input + .box{} 형제 선택자
 input > .box{} direct child 직계 자식
 ```
 
-```css
-/*eg1)*/
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>3-7</title>
-    <link href="styles.css" rel="stylesheet" />
-    <style>
-      .container {
-        background-color: seagreen;
-        height: 1500px;
-        width: 1500px;
-      }
-      .container > .box:nth-child(2n + 1) {
-        background-color: tan;
-      }
-      .box {
-        width: 100px;
-        height: 100px;
-        background-color: springgreen;
-        border: 1px solid black;
-      }
-      .box:nth-child(2n):hover {
-        width: 100px;
-        height: 100px;
-        background-color: skyblue;
-        border: 1px solid black;
-      }
-      .box + .siba {
-        background-color: red;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box siba"></div>
-    </div>
-  </body>
-</html>
-
-```
-
 - 3-9 CSS states
 
 ```css
@@ -285,6 +235,8 @@ input > .box{} direct child 직계 자식
 .box:hover{ transform: rotate(1turn); scale(.5, .5);}
 ```
 
+- 박스에 마우스를 올렸을때 트렌지션 효과두기
+  [example 3-8](/3.CSS3/3-7.html)
 - 4-4 애니메이션
   계속해서 트렌지션 및 트렌스폼 효과를 주고 싶다면 애니메이션을 주면 됨.
 
@@ -303,6 +255,8 @@ input > .box{} direct child 직계 자식
     transform: rotate(1turn) scale(0.5, 0.5);
   }
 }
+-
+
 계속해서 애니메이션을 반복하고 싶다면: keyframe과 무한히 애니메이션을 바꿔!
 .box {
   width: 100px;
@@ -323,7 +277,9 @@ input > .box{} direct child 직계 자식
 }
 ```
 
-(example)[/3.CSS3/3-10.html]
+- 무한 애니메이션 예제
+  [example 3-9](/3.CSS3/3-9.html)
+  [example 3-10](/3.CSS3/3-10.html)
 
 - 4-5 Medai Queries
 
