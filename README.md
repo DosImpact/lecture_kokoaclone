@@ -153,38 +153,91 @@ center;....
 - 가상 설렉터란(pseudo-selector) :  
   태그이름,class,id를 쓰지않고 선택하는 방법이 있다는것!!속성을 선택
 
-```
-input[type = "submit"]{
-background-color:red;
+```css
+input[type="submit"] {
+  background-color: red;
 }
-input[type= "password"]{
-background-color:blue;
+input[type="password"] {
+  background-color: blue;
 }
-input{
-border:1px solid yellow;
+input {
+  border: 1px solid yellow;
 }
 ```
 
 - 자식선택,직계선택,형제선택
 
-```
-마지막 자식을 선택
+```css
+box들이 여럿있을때 그중에서 선택하는 방법
+
 .box{
 background-color:greend; display:block; height:100px; border:1px solid black;
 }
 .box:last-child{
 background-color:pink;
 }
-.box:first-child{} 첫번째 자식을 선택
-.box:nth-child(2){} 두번째 자식을 선택
-.box:nth-child(2n){} 짝수들을 선택
+.box:first-child{} 첫번째 요소를 선택
+.box:nth-child(2){} 두번째 요소를 선택
+.box:nth-child(2n){} 짝수의 요소들을 선택
+
+box들이 여럿있을떄 그중에서 다른 요소를 선택하는 방법
 input + .box{} 형제 선택자
 input > .box{} direct child 직계 자식
 ```
 
-- 3-9 CSS states
+```css
+/*eg1)*/
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>3-7</title>
+    <link href="styles.css" rel="stylesheet" />
+    <style>
+      .container {
+        background-color: seagreen;
+        height: 1500px;
+        width: 1500px;
+      }
+      .container > .box:nth-child(2n + 1) {
+        background-color: tan;
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: springgreen;
+        border: 1px solid black;
+      }
+      .box:nth-child(2n):hover {
+        width: 100px;
+        height: 100px;
+        background-color: skyblue;
+        border: 1px solid black;
+      }
+      .box + .siba {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box siba"></div>
+    </div>
+  </body>
+</html>
 
 ```
+
+- 3-9 CSS states
+
+```css
 .box{ background-color:red; font-size:40px;}
 .box:hover{} 마우스를 올리면~
 .box:active{} 마으스로 클릭하면
@@ -197,44 +250,89 @@ input > .box{} direct child 직계 자식
 - 4-2 트렌지션
   box클래스에 마우스를 올리면 1초에 걸처 색깔이 서서히 바뀐다.
 
-```
-  .box{background-color:blue; color:white; transition:background-color .9s ease-in-out; } 배경만 바뀌게 만든다.
-  .box{background-color:blue; color:white; transition:all .9s ease-in-out; } 모든 속성이 바뀐다.
-  .box:hover{background-color:green;}
+```css
+.box {
+  background-color: blue;
+  color: white;
+  transition: background-color 0.9s ease-in-out;
+}
+배경만 바뀌게 만든다. .box {
+  background-color: blue;
+  color: white;
+  transition: all 0.9s ease-in-out;
+}
+모든 속성이 바뀐다. .box:hover {
+  background-color: green;
+}
 ```
 
 - 4-3 트렌스포메이션
-  html 문서의 요소들의 모습이 바뀌는것, 회전,이동,skew 등등  
-  .box{ width: 500px; height: 500px; background: red; transform: rotate(20deg); }
+  html 문서의 요소들의 모습이 바뀌는것, 회전,이동,skew 등등
+
+```css
+.box {
+  width: 500px;
+  height: 500px;
+  background: red;
+  transform: rotate(20deg);
+}
+```
 
 트렌지션이랑 트렌스포메이션이랑 합치면 대단한 효과.
+
+```css
 .box{ width:100px; height:100px; background: red; transition: transform .5s ease-in-out;}
 .box:hover{ transform: rotate(1turn); scale(.5, .5);}
+```
 
 - 4-4 애니메이션
   계속해서 트렌지션 및 트렌스폼 효과를 주고 싶다면 애니메이션을 주면 됨.
 
-```
-.box{width:100px; height:100px; background:red; animation: 1.5s scaleAndRotateSquare ease-in-out; }
-@keyframes scaleAndRotateSquare{
-from{ transform:none;}
-to{ transform:rotate(1turn) scale(.5, .5); }
+```css
+.box {
+  width: 100px;
+  height: 100px;
+  background: red;
+  animation: 1.5s scaleAndRotateSquare ease-in-out;
+}
+@keyframes scaleAndRotateSquare {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotate(1turn) scale(0.5, 0.5);
+  }
 }
 계속해서 애니메이션을 반복하고 싶다면: keyframe과 무한히 애니메이션을 바꿔!
-.box{width:100px; height:100px; background:red; animation: 1.5s scaleAndRotateSquare infinite ease-in-out; }
-@keyframes scaleAndRotateSquare{
-0%{ transform:none;}
-50%{ transform:rotate(1turn) scale(.5, .5); }
-100%{ transform:none; }
+.box {
+  width: 100px;
+  height: 100px;
+  background: red;
+  animation: 1.5s scaleAndRotateSquare infinite ease-in-out;
+}
+@keyframes scaleAndRotateSquare {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: rotate(1turn) scale(0.5, 0.5);
+  }
+  100% {
+    transform: none;
+  }
 }
 ```
+
+(example)[/3.CSS3/3-10.html]
 
 - 4-5 Medai Queries
 
-```
-  @media screen and (min-width:320px) and (max-width:640px){
-  body{ background-color:blue; }
+```css
+@media screen and (min-width: 320px) and (max-width: 640px) {
+  body {
+    background-color: blue;
   }
+}
 ```
 
 ## Outro

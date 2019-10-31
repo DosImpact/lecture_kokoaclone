@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>3-10</title>
+    <link href="styles.css" rel="stylesheet" />
+    <style>
+      .magicbox {
+        background-color: thistle;
+        width: 1400px;
+        height: 1400px;
+        animation: scaleUpAndRotate infinite 0.1s ease-in-out;
+      }
+      @keyframes scaleUpAndRotate {
+        0% {
+          background-color: teal;
+          transfrom: none;
+        }
+        50% {
+          background-color: tomato;
+          transform: rotate(1turn) scale(0.5, 0.5);
+        }
+        100% {
+          background-color: teal;
+          transform: none;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="magicbox"></div>
+  </body>
+</html>

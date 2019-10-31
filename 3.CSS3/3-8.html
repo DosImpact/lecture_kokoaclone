@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>3-8</title>
+    <link href="styles.css" rel="stylesheet" />
+    <style>
+      .magicbox {
+        background-color: springgreen;
+        width: 400px;
+        height: 400px;
+        transition: all 0.5s ease-in-out; /*앞으로 바뀔 상태를 알려준다.*/
+      }
+      .magicbox:hover {
+        background-color: thistle;
+        width: 400px;
+        height: 400px;
+        transform: rotate(1turn) scale(0.5, 0.5); /*현재 바꿀것들을 지정해 줘라.*/
+      }
+    </style>
+  </head>
+  <body>
+    <div class="magicbox"></div>
+  </body>
+</html>

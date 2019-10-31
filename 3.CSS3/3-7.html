@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>3-7</title>
+    <link href="styles.css" rel="stylesheet" />
+    <style>
+      .container {
+        background-color: seagreen;
+        height: 1500px;
+        width: 1500px;
+      }
+      .container > .box:nth-child(2n + 1) {
+        background-color: tan;
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: springgreen;
+        border: 1px solid black;
+      }
+      .box:nth-child(2n):hover {
+        width: 100px;
+        height: 100px;
+        background-color: skyblue;
+        border: 1px solid black;
+      }
+      .box + .siba {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box siba"></div>
+    </div>
+  </body>
+</html>
