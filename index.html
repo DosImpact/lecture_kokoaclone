@@ -1,27 +1,72 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <!-- 내가 작성한 문서의 인코딩 방식, 만약 잘못된 방식이면 ?마크 덩어리가 나올것이다.-->
-        <meta charset ="UTF-8">
-        <!--google에 검색했을때 간략하게 나오는 설명글이 meta의 내용이다.-->
-        <meta name="description" content="Welcome to kakao clone">
-        <!--브라우저를 위한 정보, 유저를 위한 정보는 아니다. 특정 sns을 위한 메타태그도 있다.-->
-        <meta name="author" content="Dos Impact">
-        <title>This is Nomad Course</title>
-        <link href="styles.css" rel="stylesheet">
-    </head>
-    <body>
-        <h1>h1 tag size</h1>
-        <h6>h6 tag size</h6>
-        <section>
-            <header id ="header0" class ="defaultHeader">
-                <h1>Title of a section</h1>
-            </header>
-        </section>
-        <div>
-            <header id = "header1" class="defaultHeader">
-                <a href="contact.html">link</a>
-            </header>
-        </div>
-    </body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>TEST</title>
+    <link href="styles.css" rel="stylesheet" />
+    <style>
+      body,
+      html {
+        height: 1500px;
+        padding: 0;
+        margin: 0;
+      }
+      .navbar {
+        background-color: #ff7979;
+        height: 50px;
+        width: 1100px;
+        position: fixed;
+        z-index: 5;
+      }
+      .container--left {
+        display: inline-block;
+        background-color: #7ed6df;
+        color: white;
+        height: 1500px;
+        width: 700px;
+        padding: 50px;
+        margin-top: 50px;
+        position: relative;
+      }
+      .container--right {
+        display: inline-block;
+        position: absolute;
+        background-color: #ffcc00;
+        height: 1500px;
+        width: 200px;
+        padding: 45px;
+        margin-top: 50px;
+        border: 5px solid gray;
+      }
+      .greenbox {
+        background: #badc58;
+        width: 85px;
+        height: 35px;
+        position: absolute;
+        right: -50px;
+        top: -20px;
+        z-index: 6;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar"></div>
+    <div class="container--left">
+      <h1>This is the day one</h1>
+      <div class="greenbox"></div>
+    </div>
+    <div class="container--right"></div>
+  </body>
 </html>
+<!--
+    1.빨간색 바를 fixed하고 파란색노란색 박스를 묶어서 relative를 주면
+    빨간색바가 스크롤할때 내려오긴하는데, 파란색노란색 박스보다 뒤에 있어서 안보임..
+
+    2. 부모의 width를 100%주고 자식이 각각 반반 나눠가질려면 어떻게 해야할까?
+    inline-block을 각각주고 width 50%씩 주니까, 두번째 자식블록이 개행함;;
+
+    3. 파랑색 박스와 노란색 박스의 포지션을 잘 잡아놓았는데, 
+    흰색 글자를 추가했더니 파란색 박스가 아래로 내려감;
+-->
