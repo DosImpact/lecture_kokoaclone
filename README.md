@@ -1,6 +1,6 @@
 # 노마드 코더 카카오 클론 강의 레파지토리 및 내용 정리
 
-[카카오 클론](kakaoV2/index.html)
+[카카오 클론](https://dosimpact.github.io/kokoaclone/kakaoV2/index.html)
 
 ## [Module #1] The tools of a Web Developer
 
