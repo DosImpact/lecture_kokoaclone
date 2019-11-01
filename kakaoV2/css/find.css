@@ -1,0 +1,35 @@
+.find {
+}
+/*ul > li > span + span 있는 구조에서*/
+/*ul flex가  li를 다룬다. */
+.find .find__header-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 20px;
+  margin-top: 60px;
+}
+.find .header-bth {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* span 과 span 를 block으로 개행해준다.*/
+.find .header-btn__title {
+  margin-top: 10px;
+  font-size: 14px;
+}
+.find .header-bth__title {
+}
+.find .header-btn__icon {
+  font-size: 12px;
+}
+.find .find__recommended {
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid #f7f7f7;
+}
+.find .find__title {
+  font-size: 12px;
+  opacity: 0.7;
+  margin-bottom: 20px;
+}
