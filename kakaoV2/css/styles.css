@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap");
+@import "reset.css";
+@import "status-bar.css";
+@import "header.css";
+@import "nav-bar.css";
+@import "friend.css";
+* {
+  /*이 설정을 안해주면, 박스의 크기는 = 마진+보더+패딩+컨텐츠 쭉쭉 생각했던것보다 커짐*/
+  /*이 설정은 border까지의 크기를  height,width로 예상했던것만큼 만들어줌*/
+  box-sizing: border-box;
+}
+body {
+  background-color: white;
+  padding: 10px 20px;
+  color: #020202; /*완전 검정색이면 예쁘지 않다. 사실 조금 흐린 검정색이다.*/
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  /* 내가 임포트한 폰트를 넣고, -a를 처서 기본 폰트들을 차선책으로 넣어!*/
+}
+a {
+  /*부모의 색깔을 적용하는 설정 - 이경우에는 검정색이라*/
+  color: inherit;
+}

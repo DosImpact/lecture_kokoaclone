@@ -358,7 +358,56 @@ BEM : block element modifier
    .header**serachbar{}
 
 2. 규칙 Modifier는 --로 이어쓴다.
-   .block\_\_elemnet--sizebig
+   .block\_\_elemnet--sizebig\
+
+# 카카오 클론 코딩 실전편 ~~
+
+## reset CSS
+
+- 기본적으로 큰 파일임. 모든 기본값 margin,padding을 0으로 만들어줌, p태그,h1태그 등등 모든 패딩 마진 다 다름.
+  [css 초기화 파일](https://meyerweb.com/eric/tools/css/reset/)
+
+```css
+styles.css에서 다음을 임포트 해서 쓰면 된다.
+@import "reset.css";
+```
+
+- Noramlize css 는 모든 브라우저의 각 태그들의 마진 패딩 등의 값을 동일하게 만들어 준다.
+- Google fonts 를 통해서, 원하는 폰트를 고르고, 가볍게 커스터 마이징(원하는 옵션만 골라),해서 import하면 끝!
+
+```css
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap");
+@import "reset.css";
+@import "status-bar.css";
+body {
+  background-color: white;
+  padding: 10px 20px;
+  color: #020202;
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+```
+
+- 왜이렇게 class를 덕지덕지 붙이나 싶었는데, class를 덕지 덕지 붙였다는 말은 스타일을 일괄적용하고
+  js로 일괄적으로 컨트롤 하겠다는 느낌인것 같다. class나 id가 없는 태그는 음... 비행청소년같은 느낌? 어디로 갔는지 모르겠고
+  설상 문서상에 딱 나타나도 어떻게 js나 css로 잡아줄수가 없네....~!!!!
+
+- css파일을 자꾸 쪼개는 이유
+
+1. 작은 쪼갠 css파일들은 결국 styles.css로 통합된다.
+2. 그렇게 작게 쪼개두면 navbar을 수정할때는 nav.css만 수정하면됨, 구지 길게 파일을 써 내려갈 필요가 없음
+
+- statusbar,header,navbar작업전에는 항상 빨간색을 칠해보고 하드라
+
+- box-sizing: border-box의 이해
+
+```css
+* {
+  /*이 설정을 안해주면, 박스의 크기는 = 마진+보더+패딩+컨텐츠 쭉쭉 생각했던것보다 커짐*/
+  /*이 설정은 border까지의 크기를  height,width로 예상했던것만큼 만들어줌*/
+  box-sizing: border-box;
+}
+```
 
 ## X. 참고 사이트
 

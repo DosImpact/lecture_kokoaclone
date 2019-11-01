@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link href="styles.css" rel="stylesheet" />
+    <style>
+      html,
+      body {
+        height: 1000px;
+      }
+      .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+      }
+      .button__content {
+        background-color: #7f8c8d;
+        border-radius: 35px;
+        height: 70px;
+        width: 270px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        transition: all 0.9s ease-in-out;
+      }
+      .button__picture {
+        transition: all 0.9s ease-in-out;
+      }
+      .button__content:hover {
+        background-color: #95a5a6;
+        box-shadow: 3px 3px 8px #95a5a6; /*w=offset h=offset blur color*/
+      }
+      .button__content:hover + .button__picture {
+        border: 7px solid black;
+        transform: scale(0.7, 0.7) rotate(135deg);
+      }
+      .button__title {
+        color: #fafbfb;
+        font-size: 30px;
+        font-weight: 300;
+      }
+      /*
+      1. 나는 버튼위에 마우스를 올렸을때, 다른 요소에게 애니메이션을 적용하고싶어 .
+      so i search how to use hover trigger another elements
+      - .button__content:hover + .button__picture 으로 마치 버튼이 다른요소를 트리거 하는것처럼 꾸미었다. 
+      한계가 존재하는듯... DOM이 잘 해결해주겠자?
+      - transition은 .button__picture에게도 적용시켰다. 
+
+      2. 여전히 문제, rotate랑 스케일은 ease-in-out 가능
+                    그러나 border는 ease-in 만 가능!!
+      */
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="button__content">
+        <div class="button__title">
+          i'm a button
+        </div>
+      </div>
+      <div class="button__picture">
+        <img src="nico.png" />
+      </div>
+    </div>
+  </body>
+</html>

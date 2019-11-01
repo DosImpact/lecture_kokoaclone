@@ -1,0 +1,37 @@
+.nav {
+  background-color: #fcfcfc;
+
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  padding: 20px 50px;
+
+  border-top: 1px solid #f7f7f7;
+}
+
+.nav .nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+.nav i {
+  font-size: 20px;
+}
+.nav .nav__list-link {
+  position: relative;
+}
+.nav__badge {
+  position: absolute;
+  top: -7px;
+  right: -7px;
+  color: white;
+  background-color: #dc5d46;
+  width: 19px;
+  height: 19px;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*상자크기의 20px의 중간을 주면 동그라미를 얻을 수 있다.*/
+  border-radius: 10px; // 50%
+}
