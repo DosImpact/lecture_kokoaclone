@@ -1,5 +1,7 @@
 # 노마드 코더 카카오 클론 강의 레파지토리 및 내용 정리
 
+[카카오 클론](kakaoV2/index.html)
+
 ## [Module #1] The tools of a Web Developer
 
 ### 개발 환경 : vs code + (Material Theme + Material Icon + prettier) + git/github
