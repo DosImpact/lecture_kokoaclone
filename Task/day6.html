@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>day6</title>
+    <link href="styles.css" rel="stylesheet" />
+    <style>
+      html,
+      body {
+      }
+      .container {
+        background: #76c4c6;
+        width: 500px;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+      }
+      .container__circle {
+        animation: rotate infinite 0.9s ease-in-out;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .circle {
+        width: 8px;
+        height: 8px;
+        background-color: whitesmoke;
+        margin: 8px;
+        border-radius: 50%;
+      }
+      @keyframes rotate {
+        0% {
+          transfrom: none;
+        }
+        25%,
+        100% {
+          transform: rotate(180deg);
+        }
+      }
+      .container__box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .box {
+        width: 13px;
+        height: 45px;
+        background-color: white;
+        margin: 3px;
+        animation: scaleup infinite 1.3s ease-in-out;
+      }
+      @keyframes scaleup {
+        0%,
+        40% {
+          height: 45px;
+        }
+        20% {
+          height: 100px;
+        }
+        /*1.why boxs are breeze~!?*/
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container__circle">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="container__box">
+        <div class="box" style="animation-delay: 0s;"></div>
+        <div class="box" style="animation-delay: .1s;"></div>
+        <div class="box" style="animation-delay: .2s;"></div>
+        <div class="box" style="animation-delay: .3s;"></div>
+        <div class="box" style="animation-delay: .4s;"></div>
+      </div>
+    </div>
+  </body>
+</html>
