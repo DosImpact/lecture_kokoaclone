@@ -3,7 +3,7 @@
 }
 .chat-screen {
   background-image: url("../images/hotel-wallpaper.png");
-  min-height: 100vh;
+  min-height: 130vh;
   /*viewport의 높이의 100%을 주는 옵션 , viewport는 스크린이다.*/
 }
 .chat-screen .chat__messages {
@@ -34,7 +34,7 @@
 }
 .chat__write {
   position: fixed;
-  bottom: 50px;
+  bottom: 25px;
   margin: 0 auto;
   left: 0;
   right: 0;
