@@ -1,0 +1,131 @@
+.chats-body {
+  padding: 0;
+}
+.chat-screen {
+  background-image: url("../images/hotel-wallpaper.png");
+  min-height: 100vh;
+  /*viewport의 높이의 100%을 주는 옵션 , viewport는 스크린이다.*/
+}
+.chat-screen .chat__messages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  border-top: 1px solid #f7f7f7;
+  padding: 0px 20px;
+  padding-top: 20px;
+}
+.chat__messages .chat__timestamp {
+  background-color: white;
+  font-size: 12px;
+  padding: 4px 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: 3px 6px 12px rgba(50, 50, 93, 0.25);
+  /*대문자로 쓰기*/
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.chats-body .header {
+  padding: 0px 20px;
+}
+.chats-body .status-bar {
+  padding: 10px 20px;
+}
+.chat__write {
+  position: fixed;
+  bottom: 50px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  /*position이 fixed 된 녀석을 가운데 정렬 하는방법:
+    bottom:50px; margin: 0 auto; left: 0; right: 0;*/
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fcfcfc;
+  box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
+    0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+
+  /*수평방향 수직방향 블러 그림자색깔*/
+  padding: 10px 20px;
+  border-radius: 40px;
+
+  justify-content: space-between;
+}
+.chat__write-column:nth-child(2) {
+  width: 80%;
+}
+.chat__write-column input {
+  padding: 10px 10px;
+  width: 100%;
+  border: none;
+  font-size: 14px;
+}
+.chat__write-column input:focus {
+  outline: none;
+}
+
+.message {
+  display: flex;
+  align-items: center;
+  /*한줄을 차지하고 싶다. 화면의 100%가 되게끔.*/
+  width: 60%;
+  margin-bottom: 20px;
+  align-items: flex-start;
+}
+.message .message__content {
+  width: 280px;
+}
+/*메시지가 왼쪽 오른쪽 = flex-start / flex-end*/
+.incoming--message {
+  align-self: flex-start;
+}
+.sent--message {
+  align-self: flex-end;
+  display: flex;
+  justify-content: flex-end;
+}
+.incoming--message img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.message .message__bubble {
+  box-shadow: 3px 6px 12px rgba(50, 50, 93, 0.25);
+  border-radius: 20px;
+  padding: 10px;
+  margin-top: 3px;
+}
+.message .message__author {
+  font-weight: 600;
+  font-size: 14px;
+}
+.incoming--message .message__author {
+  display: block;
+  margin-top: 10px;
+}
+.incoming--message .message__bubble {
+  border-bottom-left-radius: 1px;
+  background: #ee9ca7; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ffdde1,
+    #ee9ca7
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ffdde1, #ee9ca7);
+  font-weight: 400;
+}
+.sent--message .message__bubble {
+  border-bottom-right-radius: 1px;
+  background: #a8ff78; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #78ffd6,
+    #a8ff78
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #78ffd6, #a8ff78);
+  font-weight: 400;
+}

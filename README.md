@@ -86,6 +86,11 @@ position:relative;
 
 포지션 absolute는 포지션 relative에 상대적으로 포지션을 잡는다. 없으면 body를 기준!
 
+```
+position : static| fiexd| absolute| relative;
+top|bottom|right|left :100px;
+```
+
 ## 3-7 flex box 퍼킹 어메이징 한것.
 
 flexbox의 필요성 - 인라인 블럭으로만 만들려고 하면, 매우 귀찮은 일임. 박스가 개행할때의 margin값도 좌우가 다르고, 인라인 블럭들의 정렬도 필요할때 하나하나 조정해야됨.
@@ -203,17 +208,20 @@ input > .box{} direct child 직계 자식
   box클래스에 마우스를 올리면 1초에 걸처 색깔이 서서히 바뀐다.
 
 ```css
+from: 배경만 바뀌게 만든다.
 .box {
   background-color: blue;
   color: white;
   transition: background-color 0.9s ease-in-out;
 }
-배경만 바뀌게 만든다. .box {
+from: 모든 속성이 바뀐다.
+.box {
   background-color: blue;
   color: white;
   transition: all 0.9s ease-in-out;
 }
-모든 속성이 바뀐다. .box:hover {
+to: hover
+.box:hover {
   background-color: green;
 }
 ```
@@ -362,7 +370,11 @@ BEM : block element modifier
 2. 규칙 Modifier는 --로 이어쓴다.
    .block\_\_elemnet--sizebig\
 
+---
+
 # 카카오 클론 코딩 실전편 ~~
+
+---
 
 ## reset CSS
 
@@ -411,6 +423,34 @@ body {
 }
 ```
 
+- 예쁜 하얀 동그라미 폼 만들기
+
+```
+.chat__write {
+  position: fixed;
+  bottom: 50px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  /*position이 fixed 된 녀석을 가운데 정렬 하는방법:
+    bottom:50px; margin: 0 auto; left: 0; right: 0;*/
+  width: 80%;
+  display: flex;
+  background-color: #fefefe;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  /*수평방향 수직방향 블러 그림자색깔*/
+
+  padding: 20px 50px;
+  border-radius: 40px;
+}
+
+```
+
+```
+  아래 위 둘다 그림자 주기.
+   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2),0px -8px 20px rgba(0, 0, 0, 0.2);
+```
+
 ## X. 참고 사이트
 
 ## [분석하고 싶은 웹사이트의 사이즈를 볼때](https://chrome.google.com/webstore/detail/page-ruler/emliamioobfffbgcfdchabfibonehkme?hl=en)
@@ -425,3 +465,10 @@ body {
 [BEM 소개](http://getbem.com/introduction/)
 [BEM 키 컨셉](https://en.bem.info/methodology/key-concepts/)
 [BEM 퀵스타트](https://en.bem.info/methodology/quick-start/)
+
+---
+
+[CSS 프레임 워크 스토리 북](https://storybook-design-system.netlify.com/?path=/docs/design-system-intro--page)  
+[ 드리블 멋진 웹사이트 디자인을 찾을 수 있는곳. ](https://dribbble.com/)
+[ 멋진 패경 패턴 ](https://www.toptal.com/designers/subtlepatterns/)
+[ 멋진 UI 그래디언트 ](https://uigradients.com/#MegaTron)
