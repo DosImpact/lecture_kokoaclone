@@ -1,0 +1,55 @@
+.commerce {
+  width: 700px;
+  height: 700px;
+}
+.commerce .commerce__container {
+  background: white;
+  width: 100%;
+  height: 100%px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.commerce .commerce__mockup {
+  align-self: center;
+}
+.commerce .commerce__row {
+  margin: 0px 15px 20px 15px;
+  width: 95%;
+}
+.commerce .commerce__row:nth-child(3) {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.commerce__mockup img {
+  width: 80%;
+  height: 80%;
+  align-self: center;
+}
+.commerce__row {
+}
+.commerce__row .commerce__title {
+  font-weight: 700;
+  font-size: 20px;
+  padding: 10px 0px;
+}
+.commerce__row .commerce__explain {
+  font-weight: 400;
+  opacity: 0.6;
+}
+.commerce__column {
+  display: flex;
+}
+.commerce__column .commerce__price {
+  font-weight: 700;
+  font-size: 20px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.commerce__column .commerce__ratings {
+}
