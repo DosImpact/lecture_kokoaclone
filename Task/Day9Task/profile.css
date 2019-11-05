@@ -35,10 +35,10 @@
 
 .profile__content .profile__title {
   font-weight: 700;
-  font-size: 20px;
+  font-size: 22px;
   padding: 10px;
   margin: 5px;
-  margin-top: 15px;
+  margin-top: 60px;
 }
 .profile__content .profile__job {
   opacity: 0.6;
@@ -48,26 +48,24 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 25px;
+  margin-bottom: 30px;
 }
 .profile__btns .profile__btn {
   margin: 10px;
 }
 .profile__btns button {
-  font-size: 14px;
+  font-size: 16px;
   border: unset;
   outline: none;
   font-weight: 600;
   border-radius: 5px;
-  width: 150px;
-  height: 50px;
+  width: 200px;
+  height: 60px;
   background-color: #6a75ff;
   color: #eaecff;
 }
 .profile__btns button:hover {
-  border-radius: 5px;
-  width: 150px;
-  height: 50px;
   background-color: #eaecff;
   color: #6a75ff;
 }
