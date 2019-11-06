@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap");
+@import "reset.css";
+
+* {
+  box-sizing: border-box;
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+body,
+html {
+  background-color: #f8f7ff;
+}
+.phone {
+  background-color: #f8f8f8;
+  width: 300px;
+  height: 600px;
+  border: 1px solid gray;
+  border-radius: 35px;
+  margin: 50px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2), 0px -8px 20px rgba(0, 0, 0, 0.2);
+}
+.login {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+.login .login__title {
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 20px;
+  font-weight: 600;
+}
+.login .login__existing,
+.login .login__footer {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 0;
+}
+.login__remember i {
+  color: #e2283e;
+}
+.login__existing .login__text {
+  border: unset;
+  border-radius: 10px;
+  border: 1px solid rgb(199, 199, 199);
+  padding: 10px;
+  margin: 10px 0px;
+  height: 35px;
+  width: 100%;
+  font-size: 12px;
+}
+.login__existing .login__forgotps {
+  border: unset;
+  background: inherit;
+  align-self: flex-end;
+  color: #e2283e;
+  font-weight: 600;
+  font-size: 12px;
+}
+.login__existing .login__remember {
+  opacity: 0.6;
+  font-size: 13px;
+  margin-bottom: 50px;
+}
+.login__remember input {
+}
+.login__existing .login__signin {
+  font-size: 12px;
+  border: unset;
+  border-radius: 20px;
+  width: 100%;
+  height: 35px;
+  background: #e2283e;
+  color: whitesmoke;
+}
+.login .login__sns {
+  display: flex;
+  justify-content: space-around;
+}
+.login .login__or {
+  margin: 30px 0;
+  font-size: 12px;
+  font-weight: 700;
+}
+.login .login__sns {
+}
+.login .login__sns button {
+  border: unset;
+  margin: 10px;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-radius: 20px;
+  width: 130px;
+  height: 35px;
+  background: #475a95;
+  color: whitesmoke;
+}
+.login .login__sns button:nth-child(2) {
+  background: #5da1f2;
+}
+.login .login__footer {
+  font-size: 12px;
+  font-weight: 600;
+}
+.login__footer .login__sign-up {
+  margin-bottom: 10px;
+}
+.login__footer span {
+  opacity: 0.4;
+}
+.login__footer a {
+  text-decoration: unset;
+  color: #e2283e;
+}

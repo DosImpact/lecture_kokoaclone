@@ -451,6 +451,11 @@ body {
    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2),0px -8px 20px rgba(0, 0, 0, 0.2);
 ```
 
+```
+  letter-spacing: 0.1px;
+  overflow: hidden;
+```
+
 ## X. 참고 사이트
 
 ## [분석하고 싶은 웹사이트의 사이즈를 볼때](https://chrome.google.com/webstore/detail/page-ruler/emliamioobfffbgcfdchabfibonehkme?hl=en)
