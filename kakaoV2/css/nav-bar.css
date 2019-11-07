@@ -35,3 +35,18 @@
   /*상자크기의 20px의 중간을 주면 동그라미를 얻을 수 있다.*/
   border-radius: 10px;
 }
+
+@keyframes showNavBar {
+  from {
+    transform: translateY(80px);
+  }
+  to {
+    transform: none;
+  }
+}
+.nav {
+  transform: translateY(80px);
+  animation: showNavBar 0.5s ease-in-out forwards;
+  /*forwards 는 애니메이션이 from에서 to로 끝나면 to상태 유지, 기본값은 from으로 돌아옴.*/
+  animation-delay: 0.1s;
+}
