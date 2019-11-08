@@ -1,6 +1,10 @@
 # 노마드 코더 카카오 클론 강의 레파지토리 및 내용 정리
 
 [카카오 클론](https://dosimpact.github.io/kokoaclone/kakaoV2/index.html)
+[ Task 09 ](https://dosimpact.github.io/Task/Day9Task/index.html)
+[ Task 10 ](https://dosimpact.github.io/Task/Day10Task/index.html)
+[ Task 11 ](https://dosimpact.github.io/Task/Day11Task/index.html)
+[ Task 12 ](https://dosimpact.github.io/Task/Day12Task/index.html)
 
 ## [Module #1] The tools of a Web Developer
 
