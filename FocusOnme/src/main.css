@@ -48,7 +48,9 @@
 }
 .main__menu .menu__row__img {
 }
-
+.main .menu__row:hover {
+  background-color: #282b33;
+}
 .camera-roll {
   position: absolute;
   bottom: -20px;
