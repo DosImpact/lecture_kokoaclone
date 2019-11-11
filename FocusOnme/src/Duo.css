@@ -25,3 +25,45 @@
 .Duo .header_bar {
   text-align: center;
 }
+.Duo .cross-hair {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+}
+.Duo .cross-hair .corss-hair__img {
+  width: 100%;
+  height: 100%;
+  background: url("./images/selector-square-border.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.Duo .navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.Duo .navbar .navbar__column {
+  width: 100%;
+}
+.Duo .navbar .navbar__column:nth-child(1) .navbar__listitem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Duo .navbar .navbar__column:nth-child(1) .item-name {
+  background: red;
+}
+.Duo .navbar .navbar__column:nth-child(1) .item-picture {
+}
+.Duo .navbar .navbar__column:nth-child(1) .item-picture .item-picture__img {
+}
+.Duo .navbar__quick {
+}
