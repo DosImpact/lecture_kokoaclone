@@ -4,8 +4,9 @@
 [ Task 09 ](https://dosimpact.github.io/kokoaclone/Task/Day9Task/index.html)  
 [ Task 10 ](https://dosimpact.github.io/kokoaclone/Task/Day10Task/index.html)  
 [ Task 11 ](https://dosimpact.github.io/kokoaclone/Task/Day11Task/index.html)  
-[ Task 12 ](https://dosimpact.github.io/kokoaclone/Task/Day12Task/index.html)
-[ Task 13 ](https://dosimpact.github.io/kokoaclone/Task/Day13Task/index.html)
+[ Task 12 ](https://dosimpact.github.io/kokoaclone/Task/Day12Task/index.html)  
+[ Task 13 ](https://dosimpact.github.io/kokoaclone/Task/Day13Task/index.html)  
+[ Focus on Me ](https://dosimpact.github.io/FocusOnme/index.html)
 
 ## [Module #1] The tools of a Web Developer
 
