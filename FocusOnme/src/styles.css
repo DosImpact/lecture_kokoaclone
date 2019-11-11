@@ -1,67 +1,10 @@
 @import "reset.css";
-
+@import "base.css";
+@import "logo.css";
+@import "main.css";
+@import "Duo.css";
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
-* {
-  box-sizing: border-box;
-}
-body {
-  font-family: sans-serif;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  background-color: #f8f7ff;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  font-size: 16px;
-  /*color에서  alpha값을 주면 글자만 흐릿해 지네, opacity주면 글자고뭐고 다 흐릿해지는데,*/
-  /* color: rgba(68, 61, 61, 0.4); */
-  font-weight: 600; /* 400 or 600 = 기본 or 굵게 */
-}
-.phone {
-  margin-top: 50px;
-  background-color: white;
-  /*핸드폰 처럼 보이는 한 세트*/
-  width: 400px;
-  height: 830px; /*고정 w,h 반응형 x */
 
-  border-radius: 40px;
-  /* box-shadow: inset -6px -6px 15px rgba(145, 160, 180, 0.45),
-    30px 30px 40px rgba(118, 146, 180, 0.18); */
-  /*--------------------------------------*/
-  overflow: hidden;
-  /* 오버플로는 박스모델에서 content를 넘어가는 것들을 어떻게 처리하는지
-  overflow: visible | hidden | scroll | auto 
-  */
-  padding: 20px;
-  position: relative;
-  /* background-image: url("../bg\ \(3\).jpg"); */
-  background-image: url("../bg\ \(3\).jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  box-shadow: 0px -500px 100px white inset, 10px -50px 30px #4776e6 inset,
-    10px -50px 70px 10px #8e54e9 inset;
-
-  /* box-shadow: -100px -500px 1000px #8e54e9 inset; */
-}
-.phone .phone__bg {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-}
-.screen {
-  width: 100%;
-  height: 100%;
-
-  border-radius: 25px;
-  padding: 20px 30px;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
 .status_bar,
 .header_bar {
   display: flex;

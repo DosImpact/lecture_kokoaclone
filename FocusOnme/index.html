@@ -12,7 +12,29 @@
     <link rel="stylesheet" href="src/styles.css" />
   </head>
   <body>
-    <div class="phone">
+    <!-- Logo ------------------------------------------------------------------>
+    <div class="phone logo">
+      <div class="screen">
+        <div class="status_bar">
+          <div class="status_bar__column">
+            <span>9:42</span>
+          </div>
+          <div class="status_bar__column">
+            <i class="fas fa-signal"></i>
+            <i class="fas fa-wifi"></i>
+            <i class="fas fa-battery-full"></i>
+          </div>
+        </div>
+        <section class="content">
+          <div class="content__logo"></div>
+          <div class="content__title">
+            <h1>Focuse on me</h1>
+          </div>
+        </section>
+      </div>
+    </div>
+    <!-- main menus ------------------------------------------------------------------>
+    <div class="phone main">
       <div class="screen">
         <div class="status_bar">
           <div class="status_bar__column">
@@ -27,101 +49,91 @@
 
         <header class="header_bar">
           <div class="header_bar__column">
-            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-bars"></i>
           </div>
           <div class="header_bar__column">
-            <i class="fas fa-share-alt"></i>
+            <i class="fas fa-paint-brush"></i>
+          </div>
+          <div class="header_bar__column">
+            <i class="fab fa-accusoft"></i>
+          </div>
+          <div class="header_bar__column">
+            <i class="fas fa-camera-retro"></i>
           </div>
         </header>
 
-        <div class="pictures">
-          <ul class="pictures__picture picture">
-            <li class="picture__item">
-              <img src="bg (4).jpg" alt="" />
-            </li>
-            <li class="picture__item">
-              <img src="bg (2).jpg" alt="" />
-            </li>
-            <li class="picture__item">
-              <img src="bg (3).jpg" alt="" />
-            </li>
-            <li class="picture__item ">
-              <div class="picture__plus">
-                <span>+4</span>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <section class="content">
-          <div class="content__tag-bar">
-            <div class="tag">TOWN</div>
-            <div class="tag">HISTORICAL</div>
-            <div class="tag">FOR KIDS</div>
-          </div>
-
-          <div class="content__title">
-            <h1>City of Lights</h1>
-            <div class="title__heartbox">
-              <i class="fas fa-heart"></i>
+        <section class="main__menu">
+          <div class="menu__row">
+            <div class="menu__row__img"><i class="fas fa-desktop"></i></div>
+            <div class="menu__row__title">
+              CANVASE
             </div>
           </div>
-
-          <div class="content__location">
-            <span> <i class="fas fa-map-marker-alt"></i></span>
-            <span class="loaction__name"> Avotu iela 104-B </span>
+          <div class="menu__row">
+            <div class="menu__row__img"><i class="fas fa-images"></i></div>
+            <div class="menu__row__title">IMAGE</div>
           </div>
-
-          <div class="content__ratings">
-            <div class="ratings__column">
-              <div class="ratings__score">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <span>4.75</span>
-              </div>
-            </div>
-            <div class="ratings__column">
-              <span>325 m</span>
-            </div>
+          <div class="menu__row">
+            <div class="menu__row__img"><i class="fas fa-palette"></i></div>
+            <div class="menu__row__title">FILTERS</div>
           </div>
-
-          <div class="content__article">
-            <h3>OVERVIEW</h3>
-            <div class="article__summary">
-              Lativa's capital Riga is enrichec and inspired every day by its
-              multicaultraul communiity. Riga is perhaps the most
-            </div>
-            <span>READ MORE</span>
+          <div class="menu__row">
+            <div class="menu__row__img"><i class="fas fa-tools"></i></div>
+            <div class="menu__row__title">TOOLS</div>
+          </div>
+          <div class="menu__row">
+            <div class="menu__row__img"><i class="fab fa-artstation"></i></div>
+            <div class="menu__row__title">ARTISTIC</div>
+          </div>
+          <div class="menu__row">
+            <div class="menu__row__img"><i class="fas fa-brush"></i></div>
+            <div class="menu__row__title">BRUSHES</div>
+          </div>
+          <div class="menu__row">
+            <div class="menu__row__img"><i class="fas fa-font"></i></div>
+            <div class="menu__row__title">TEXT</div>
+          </div>
+          <div class="menu__row">
+            <div class="menu__row__img"><i class="far fa-newspaper"></i></div>
+            <div class="menu__row__title">FINALIZE</div>
           </div>
         </section>
       </div>
 
-      <div class="navbar">
-        <ul class="navbar__list">
-          <li class="navbar__listitem">
-            <i class="fas fa-home"></i>
+      <div class="camera-roll">
+        <div class="roll__header">
+          <div class="hidden-box"></div>
+        </div>
+        <ul class="roll__list">
+          <li class="roll__list-item">
+            <div class="roll__img"></div>
           </li>
-          <li class="navbar__listitem">
-            <i class="fas fa-globe-americas"></i>
+          <li class="roll__list-item">
+            <div class="roll__img"></div>
           </li>
-          <li class="navbar__listitem ">
-            <div class="navbar__map">
-              <i class="fas fa-route"></i>
-            </div>
+          <li class="roll__list-item">
+            <div class="roll__img"></div>
           </li>
-          <li class="navbar__listitem">
-            <i class="fa fa-users"></i>
+          <li class="roll__list-item">
+            <div class="roll__img"></div>
           </li>
-          <li class="navbar__listitem">
-            <i class="fas fa-cog"></i>
+          <li class="roll__list-item">
+            <div class="roll__img"></div>
+          </li>
+          <li class="roll__list-item">
+            <div class="roll__img"></div>
+          </li>
+          <li class="roll__list-item">
+            <div class="roll__img"></div>
           </li>
         </ul>
+        <div class="roll__footer">
+          <span>CAMERA ROLL</span>
+        </div>
       </div>
     </div>
-
-    <div class="phone">
+    <!-- editor Duo  -->
+    <div class="phone Duo">
       <div class="screen">
         <div class="status_bar">
           <div class="status_bar__column">
@@ -139,113 +151,7 @@
             <i class="fas fa-arrow-left"></i>
           </div>
           <div class="header_bar__column">
-            <i class="fas fa-share-alt"></i>
-          </div>
-        </header>
-
-        <div class="pictures">
-          <ul class="pictures__picture picture">
-            <li class="picture__item">
-              <img src="bg (4).jpg" alt="" />
-            </li>
-            <li class="picture__item">
-              <img src="bg (2).jpg" alt="" />
-            </li>
-            <li class="picture__item">
-              <img src="bg (3).jpg" alt="" />
-            </li>
-            <li class="picture__item ">
-              <div class="picture__plus">
-                <span>+4</span>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <section class="content">
-          <div class="content__tag-bar">
-            <div class="tag">TOWN</div>
-            <div class="tag">HISTORICAL</div>
-            <div class="tag">FOR KIDS</div>
-          </div>
-
-          <div class="content__title">
-            <h1>City of Lights</h1>
-            <div class="title__heartbox">
-              <i class="fas fa-heart"></i>
-            </div>
-          </div>
-
-          <div class="content__location">
-            <span> <i class="fas fa-map-marker-alt"></i></span>
-            <span class="loaction__name"> Avotu iela 104-B </span>
-          </div>
-
-          <div class="content__ratings">
-            <div class="ratings__column">
-              <div class="ratings__score">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <span>4.75</span>
-              </div>
-            </div>
-            <div class="ratings__column">
-              <span>325 m</span>
-            </div>
-          </div>
-
-          <div class="content__article">
-            <h3>OVERVIEW</h3>
-            <div class="article__summary">
-              Lativa's capital Riga is enrichec and inspired every day by its
-              multicaultraul communiity. Riga is perhaps the most
-            </div>
-            <span>READ MORE</span>
-          </div>
-        </section>
-      </div>
-
-      <div class="navbar">
-        <ul class="navbar__list">
-          <li class="navbar__listitem">
-            <i class="fas fa-home"></i>
-          </li>
-          <li class="navbar__listitem">
-            <i class="fas fa-globe-americas"></i>
-          </li>
-          <li class="navbar__listitem ">
-            <div class="navbar__map">
-              <i class="fas fa-route"></i>
-            </div>
-          </li>
-          <li class="navbar__listitem">
-            <i class="fa fa-users"></i>
-          </li>
-          <li class="navbar__listitem">
-            <i class="fas fa-cog"></i>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="phone">
-      <div class="screen">
-        <div class="status_bar">
-          <div class="status_bar__column">
-            <span>9:42</span>
-          </div>
-          <div class="status_bar__column">
-            <i class="fas fa-signal"></i>
-            <i class="fas fa-wifi"></i>
-            <i class="fas fa-battery-full"></i>
-          </div>
-        </div>
-
-        <header class="header_bar">
-          <div class="header_bar__column">
-            <i class="fas fa-arrow-left"></i>
+            Duo<br /><i class="fas fa-angle-down"></i>
           </div>
           <div class="header_bar__column">
             <i class="fas fa-share-alt"></i>

@@ -1,0 +1,27 @@
+.Duo {
+  margin-top: 50px;
+  background-color: white;
+  width: 400px;
+  height: 830px; /*고정 w,h 반응형 x */
+  border-radius: 40px;
+  overflow: hidden;
+  padding: 20px;
+  position: relative;
+  /* background-image: url("../bg\ \(3\).jpg"); */
+  background: linear-gradient(
+      to bottom,
+      rgba(233, 235, 239, 0.01),
+      rgba(0, 255, 0, 0.1) 45%,
+      rgba(174, 0, 255, 0.1) 55%,
+      rgba(233, 235, 239, 0.01) 100%
+    ),
+    url("./images/duo1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* box-shadow: -100px -500px 1000px #8e54e9 inset; */
+}
+.Duo .header_bar {
+  text-align: center;
+}

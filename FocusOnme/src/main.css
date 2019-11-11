@@ -1,0 +1,141 @@
+.main {
+  margin-top: 50px;
+  background-color: white;
+  width: 400px;
+  height: 830px; /*고정 w,h 반응형 x */
+  border-radius: 40px;
+  overflow: hidden;
+  padding: 20px;
+  position: relative;
+  /* background-image: url("../bg\ \(3\).jpg"); */
+  background: linear-gradient(to bottom, #e684ae80, #79cbca85, #77a0d377),
+    url("./images/target.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+
+  /* box-shadow: -100px -500px 1000px #8e54e9 inset; */
+}
+.main .header_bar {
+  color: #282b33;
+}
+.main .main__menu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 0px;
+  top: 90px;
+  font-size: 20px;
+  font-weight: 400;
+  width: 160px;
+  background-color: #282b33a2;
+  padding-left: 10px;
+}
+
+.main__menu .menu__row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.menu__row > div {
+  margin: 20px 10px;
+}
+.main__menu .menu__row__title {
+  background: linear-gradient(to right, #77a1d3, #79cbca, #e684ae);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.main__menu .menu__row__img {
+}
+
+.camera-roll {
+  position: absolute;
+  bottom: -20px;
+  right: 0px;
+  width: 100%;
+  height: 100px;
+  margin-bottom: 20px;
+  padding: 0px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #282b33;
+  font-size: 12px;
+}
+.camera-roll .roll__header {
+  width: 50px;
+  height: 4px;
+  background-color: #5c5dbc;
+  border-radius: 10px;
+}
+.camera-roll .roll__list {
+  margin: 5px 0px;
+}
+.camera-roll ul {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+.camera-roll ul li {
+  width: 60px;
+  height: 60px;
+  margin: 0px 2px;
+}
+.camera-roll .roll__img {
+  background: url("./images/target.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  width: 100%;
+  height: 100%;
+}
+.camera-roll .roll__list .roll__list-item:nth-child(2) .roll__img {
+  background: url("./images/sea1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+.camera-roll .roll__list .roll__list-item:nth-child(3) .roll__img {
+  background: url("./images/sea2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.camera-roll .roll__list .roll__list-item:nth-child(4) .roll__img {
+  background: url("./images/sea3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+.camera-roll .roll__list .roll__list-item:nth-child(5) .roll__img {
+  background: url("./images/sea4.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+.camera-roll .roll__list .roll__list-item:nth-child(6) .roll__img {
+  background: url("./images/sea5.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+.camera-roll .roll__list .roll__list-item:nth-child(7) .roll__img {
+  background: url("./images/sea6.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
