@@ -20,6 +20,7 @@
 .nav .nav__list-link {
   position: relative;
 }
+
 .nav__badge {
   position: absolute;
   top: -7px;
@@ -35,7 +36,10 @@
   /*상자크기의 20px의 중간을 주면 동그라미를 얻을 수 있다.*/
   border-radius: 10px;
 }
-
+.nav__list .nav__list-item:nth-child(2):hover .nav__badge {
+  width: 31px;
+  height: 31px;
+}
 @keyframes showNavBar {
   from {
     transform: translateY(80px);
