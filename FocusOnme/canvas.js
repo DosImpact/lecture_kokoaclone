@@ -1,5 +1,4 @@
-const body = document.querySelector("body");
-const canvasBackLayerimg = document.querySelector(".container .canvas_img");
+const canvasBackLayerimg = document.querySelector("#canvas_img");
 const canvas_mask = document.querySelector("#canvas_mask");
 const ctx = canvas_mask.getContext("2d");
 const CANVA_W = 432,
@@ -29,7 +28,7 @@ function canvasSettingDrawable() {
     }
     ctx.lineWidth = 10;
     ctx.lineCap = "round";
-    ctx.lineTo(e.clientX, e.clientY);
+    ctx.lineTo(e.clientX - 80, e.clientY - 140);
     ctx.strokeStyle = "white";
     ctx.stroke();
   }

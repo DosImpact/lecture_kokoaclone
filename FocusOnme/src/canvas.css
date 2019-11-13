@@ -1,37 +1,27 @@
 .canvas {
   width: 500px;
   height: 920px;
-  position: relative;
+  position: absolute;
   z-index: -20;
+  top: 0px;
+  left: 50px;
 }
-.canvas .screen {
-  z-index: -19;
+.main__container {
+  position: absolute;
+  top: 150px;
+  left: 80px;
 }
-.canvas .container {
-  width: 432px;
-  height: 650px;
-  background-color: whitesmoke;
-  z-index: -18;
-}
-.canvas .header_bar {
-  margin-bottom: 10px;
-}
-
-.canvas .container {
+.main__container .container {
   display: flex;
   position: relative;
 }
-.canvas .container .canvas_img {
+.main__container .canvas_img {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 0;
-  width: 432px;
-  height: 650px;
+  z-index: -20;
+  display: none;
 }
-.canvas .container .canvas_mask {
-  z-index: 3;
-}
-.canvas .showing {
+.main__container .showing {
   display: block;
 }
