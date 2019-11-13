@@ -1,0 +1,109 @@
+.Adjust {
+  background: linear-gradient(
+      to bottom,
+      rgba(233, 235, 239, 0.01),
+      rgba(0, 255, 0, 0.1) 45%,
+      rgba(174, 0, 255, 0.1) 55%,
+      rgba(233, 235, 239, 0.01) 100%
+    ),
+    url("./images/duo3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.Adjust .header_bar {
+  text-align: center;
+}
+.Adjust .cross-hair {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+}
+.Adjust .cross-hair .corss-hair__img {
+  width: 100%;
+  height: 100%;
+  background: url("./images/crosshair.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.Adjust .editor {
+  display: flex;
+  flex-direction: column;
+  width: 102%;
+  height: 130px;
+  position: absolute;
+  bottom: 0px;
+  left: -2px;
+  font-size: 12px;
+}
+.Adjust .editor .editor__column {
+  height: 100px;
+}
+
+.Adjust .editor .editor__list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+  padding: 2px;
+  background-color: #282b33;
+  height: 100px;
+}
+.Adjust .editor .editor__list .editor__list-item {
+  width: 100%;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Adjust .editor .editor__list .editor__list-item .editor__list-item__head {
+  background-color: #282b33;
+  height: 20%;
+  width: 100%;
+  text-align: center;
+  color: rgb(168, 168, 168);
+  border-top: 2px solid #649fe7;
+}
+.Adjust .editor .editor__list .editor__list-item__content {
+  width: inherit;
+  height: 80%;
+  margin: 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #989899;
+}
+.Adjust .editor .editor__list .editor__list-item__content i {
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+.Adjust .editor .editor__quick-menu {
+  height: 30px;
+}
+.Adjust .editor .quick-menu__list {
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #282b33;
+}
+.Adjust .editor .quick-menu__list .list-item:hover {
+  background-color: #020303;
+}
+.Adjust .editor .quick-menu__list .list-item {
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+.Adjust .editor__list-item:hover {
+  background-color: #020303;
+}

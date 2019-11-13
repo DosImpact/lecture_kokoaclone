@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>TASK 11</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <div class="phone canvas">
+      <div class="screen">
+        <div class="status_bar">
+          <div class="status_bar__column">
+            <span>9:42</span>
+          </div>
+          <div class="status_bar__column">
+            <i class="fas fa-signal"></i>
+            <i class="fas fa-wifi"></i>
+            <i class="fas fa-battery-full"></i>
+          </div>
+        </div>
+
+        <header class="header_bar">
+          <div class="header_bar__column">
+            <i class="fas fa-arrow-left"></i>
+          </div>
+          <div class="header_bar__column">
+            <i class="fas fa-share-alt"></i>
+          </div>
+        </header>
+
+        <section class="container">
+          <img class="canvas_img" src="target.jpg" />
+          <canvas id="canvas_mask" width="500" height="800"></canvas>
+        </section>
+        <button id="js-makeMask">MAKE MASK</button>
+        <button id="js-saveMask">SAVE MASK</button>
+        <button id="js-saveimg_Mask">SAVE img_MASK</button>
+
+        <div class="container">
+          <img id="img__result" src="" alt="" />
+        </div>
+      </div>
+    </div>
+    <script src="canvas.js"></script>
+  </body>
+</html>

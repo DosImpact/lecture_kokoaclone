@@ -1,0 +1,23 @@
+.Urban {
+  background: linear-gradient(
+      to bottom,
+      rgba(233, 235, 239, 0.01),
+      rgba(0, 255, 0, 0.1) 45%,
+      rgba(174, 0, 255, 0.1) 55%,
+      rgba(233, 235, 239, 0.01) 100%
+    ),
+    url("./images/Urban1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.Urban .editor .quick-menu__list {
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #3ba8e1;
+}
+.Urban .editor .quick-menu__list .list-item:hover {
+  background-color: #197cb1;
+}

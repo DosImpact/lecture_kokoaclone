@@ -3,6 +3,10 @@
 @import "logo.css";
 @import "main.css";
 @import "Duo.css";
+@import "Adjust.css";
+@import "Decals.css";
+@import "Urban.css";
+@import "canvas.css";
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
 
 .status_bar,
