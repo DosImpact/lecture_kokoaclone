@@ -1,0 +1,179 @@
+@import "./reset.css";
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: #ebe1e1;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  font-size: 16px;
+  font-weight: 600;
+}
+.phone {
+  margin-top: 50px;
+  background-color: #f3f3f3;
+  width: 400px;
+  height: 830px;
+  overflow: hidden;
+  padding: 10px;
+  border-radius: 20px;
+  position: absolute;
+}
+.phone .phone__screen {
+  padding: 20px;
+}
+.phone__screen .search {
+  margin-top: 20px;
+}
+.search .search__title div {
+  font-size: 36px;
+  font-weight: 400;
+}
+.search .search__title div:nth-child(1) {
+  font-weight: 700;
+}
+.search .search__box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 60px;
+  margin-top: 20px;
+  font-weight: 400;
+}
+.search .search__box div {
+  background-color: white;
+  margin: 5px;
+  border-radius: 10px;
+}
+.search .search__box .search__finder {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  height: 50px;
+  padding: 15px;
+}
+.search .search__box .search__undo {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search .search__box .search__trash {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.notes {
+  margin-top: 35px;
+}
+.notes .note__title {
+  font-weight: 600;
+  font-size: 18px;
+  margin: 20px 0px;
+}
+.notes .note__list {
+  display: flex;
+  flex-direction: row;
+}
+.note__list .note__items {
+  margin: 5px;
+  background-color: #ff896b;
+  border-radius: 20px;
+}
+.note__list .note__items:nth-child(1) {
+  background-color: #2c786c;
+}
+.note__list .note__items:nth-child(2) {
+  background-color: #916dd5;
+}
+.note__items .note__card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 135px;
+  height: 200px;
+
+  color: whitesmoke;
+  font-weight: 400;
+}
+
+.note__card .card__title {
+  font-weight: 600;
+  margin: 7px 0px;
+}
+.note__card .card__subtitle {
+  font-size: 12px;
+}
+.note__card img {
+  width: 100px;
+  height: 100px;
+}
+.groups {
+  margin-top: 30px;
+  font-weight: 600;
+  font-size: 18px;
+}
+.groups .group__title {
+  margin-bottom: 20px;
+}
+.groups .group__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.groups .group__item {
+  width: 160px;
+  height: 60px;
+  margin: 5px;
+}
+.group__item .group__card {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-self: center;
+  background-color: white;
+  border-radius: 10px;
+  padding: 5px;
+}
+.group__item .group__card img {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+}
+.group__item .card__title {
+  text-align: center;
+  padding-left: 10px;
+  display: flex;
+  align-self: center;
+  font-weight: 600;
+  font-size: 15px;
+}
+.phone .phone__nav {
+  background-color: white;
+  height: 150px;
+  width: 105%;
+  position: relative;
+  top: 30px;
+  right: 10px;
+}
+.phone__nav .navbar__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-self: center;
+  padding-top: 25px;
+  font-size: 25px;
+}
