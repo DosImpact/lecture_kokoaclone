@@ -8,6 +8,7 @@
 [ Task 13 ](https://dosimpact.github.io/kokoaclone/Task/Day13Task/index.html)  
 [ Focus on Me ](https://dosimpact.github.io/kokoaclone/FocusOnme/index.html)  
 [ canvas Deom ](https://dosimpact.github.io/kokoaclone/FocusOnme/canvas.html)  
+[ P002 ](https://dosimpact.github.io/kokoaclone/Practice/p002/index.html)
 
 ## [Module #1] The tools of a Web Developer
 
