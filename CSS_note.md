@@ -195,7 +195,7 @@ to: hover
   [example 3-9](/3.CSS3/3-9.html)
   [example 3-10](/3.CSS3/3-10.html)
 
-- 4-5 Medai Queries
+- 4-5 Media Queries
 
 ```css
 @media screen and (min-width: 320px) and (max-width: 640px) {
